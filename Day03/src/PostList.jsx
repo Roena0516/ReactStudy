@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./PostList.css"
 import { posts } from "./post";
 
-function Card({name, comment, time, avatar}) {
+function Card({name, comment, time, avatar, DeletePost}) {
     const [likeCount, SetLikeCount] = useState(0);
 
     return (
@@ -12,21 +12,25 @@ function Card({name, comment, time, avatar}) {
                 <p className="user-name">{name}</p>
                 <p className="comment-text">{comment}</p>
                 <p className="comment-time">{time}</p>
-                <button className="delete-button">삭제</button>
+                <button className="delete-button" onClick={() => DeletePost(comment)}>삭제</button>
                 <button className="like-button" onClick={() => SetLikeCount(likeCount + 1)}>조아요 <span className="like-count">{likeCount}</span></button>
             </div>
         </div>
     )
-}
+    }
 
 export default function PostList() {
-    
+    const [postList, setPostList] = useState(posts);
+
+    function DeletePost(comment) {
+        setPostList(postList.filter((item) => item.comment !== comment));
+    }
 
     return (
       <div>
         <ul className="comment-list">
-          {posts.map((item) => {
-              return <Card {...item} />
+          {postList.map((item) => {
+              return <Card {...item} DeletePost = {DeletePost}/>
           })}
         </ul>
       </div>
