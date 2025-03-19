@@ -1,5 +1,5 @@
 function Item({ name, isPacked }) {
-    return  isPacked ? <li>{name} ✅</li> : <li>{name}</li>;
+    return   <li>{name} {isPacked ? "✅"  : ""}</li>;
   }
   
   
