@@ -3,6 +3,7 @@ import ProfileForm from './ProfileForm'
 import ProfileFormImmer from './ProfileFormImmer.jsx'
 import UseRefAdd from './UseRefAdd.jsx'
 import UserAdd from './UserAdd.jsx'
+import UserModify from './UserModify.jsx'
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
       {/* <ProfileForm /> */}
       {/* <ProfileFormImmer /> */}
       {/* <UseRefAdd /> */}
-      <UserAdd />
+      {/* <UserAdd /> */}
+      <UserModify />
     </div>
   )
 }
