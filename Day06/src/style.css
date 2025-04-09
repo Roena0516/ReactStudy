@@ -1,0 +1,13 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 30px;
+    line-height: 30px;
+    background-color: cyan;
+}
+
+h1 {
+    position: fixed;
+    top: 30px;
+}

@@ -27,9 +27,9 @@ export default function UseEffect1() {
     useEffect(() => {
         console.log(`after: ${depname}`);
 
-        return (
+        return () => {
             console.log(`before: ${depname}`)
-        )
+        }
     }, [depname]);
 
     return (
