@@ -3,6 +3,9 @@ import { Routes, Route, Link } from "react-router-dom"
 import UseEffect1 from "./useEffect1"
 import Home from "./pages/home"
 import About from "./pages/about"
+import Blogs from "./pages/blogs"
+import Contact from "./pages/contact"
+import NoPage from "./pages/NoPage"
 import "./style.css"
 
 function App() {

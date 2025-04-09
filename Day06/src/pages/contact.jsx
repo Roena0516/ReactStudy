@@ -1,14 +1,14 @@
 import { useNavigate } from "react-router-dom";
 
-const Blogs = () => {
+const Contact = () => {
     const navigate = useNavigate();
     return (
         <div>
-            <h1>Blog Articles</h1>
+            <h1>Contact Me</h1>
             <button onClick={() => navigate("/")}>홈으로</button>
             <button onClick={() => navigate(-1)}>뒤로가기</button>
         </div>
     )
 }
 
-export default Blogs;
+export default Contact;
