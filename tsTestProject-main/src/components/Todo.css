@@ -1,0 +1,108 @@
+/* Todo 컨테이너 스타일 */
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f0ff;  /* 연한 보라색 배경 */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.1);  /* 보라색 그림자 효과 */
+}
+
+/* 제목 스타일 */
+h1 {
+  text-align: center;
+  color: #663399;  /* 진한 보라색 */
+  margin-bottom: 30px;
+}
+
+/* 입력 폼 스타일 */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* 입력 필드 스타일 */
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #9370db;  /* 중간 보라색 테두리 */
+  border-radius: 6px;
+  background-color: white;
+  transition: border-color 0.3s ease;  /* 부드러운 테두리 색상 전환 */
+}
+
+/* 입력 필드 포커스 스타일 */
+input[type="text"]:focus {
+  outline: none;
+  border-color: #663399;  /* 포커스 시 진한 보라색 테두리 */
+}
+
+/* 버튼 기본 스타일 */
+button {
+  padding: 12px 24px;
+  background-color: #9370db;  /* 중간 보라색 배경 */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;  /* 부드러운 배경색 전환 */
+}
+
+/* 버튼 호버 스타일 */
+button:hover {
+  background-color: #663399;  /* 호버 시 진한 보라색 */
+}
+
+/* 할 일 목록 스타일 */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* 할 일 항목 스타일 */
+li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(128, 0, 128, 0.1);  /* 보라색 그림자 */
+  transition: transform 0.2s ease;  /* 부드러운 변환 효과 */
+}
+
+/* 할 일 항목 호버 효과 */
+li:hover {
+  transform: translateY(-2px);  /* 호버 시 살짝 위로 이동 */
+}
+
+/* 삭제 버튼 스타일 */
+li button {
+  background-color: #ff69b4;  /* 핑크색 배경 */
+  padding: 8px 16px;
+}
+
+/* 삭제 버튼 호버 스타일 */
+li button:hover {
+  background-color: #ff1493;  /* 호버 시 진한 핑크색 */
+}
+
+/* 체크박스 스타일 */
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #9370db;  /* 체크박스 색상 */
+}
+
+/* 할 일 텍스트 스타일 */
+span {
+  flex: 1;
+  color: #4b0082;  /* 진한 보라색 텍스트 */
+  font-size: 16px;
+} 
